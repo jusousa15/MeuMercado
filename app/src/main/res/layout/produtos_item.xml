@@ -1,67 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
 
-    android:background="@android:color/white"
-    android:layout_margin="10dp"
-    android:id="@+id/recyclerView_produtos"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerView_produtos"
+
+    android:layout_width="390dp"
+    android:layout_height="670dp"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/white"
     tools:ignore="MissingConstraints">
 
-<ImageView
-    android:id="@+id/fotoProduto"
-    android:layout_width="120dp"
-    android:layout_height="120dp"
-    android:src="@drawable/item_arroz1"
-    android:layout_margin="10dp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/fotoProduto0"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/item_arroz1"
+        app:layout_constraintStart_toStartOf="120dp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/nomeProduto"
+        android:id="@+id/nomeProduto0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arroz Zilmar"
-        android:textSize="20sp"
-        android:textColor="@android:color/holo_red_dark"
-        android:textStyle="bold"
         android:layout_marginStart="140dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        app:layout_constraintStart_toEndOf="@id/fotoProduto"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:text="Arroz Zilmar"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto0"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<TextView
-    android:id="@+id/descriçãoProduto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Arroz Zilmar Parbolizado"
-    android:textSize="16dp"
-    android:layout_marginStart="140dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginTop="10dp"
-    android:maxLines="4"
-    app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
-    app:layout_constraintStart_toEndOf="@+id/fotoProduto"
-    app:layout_constraintEnd_toEndOf="parent"
-    />
-<TextView
-    android:id="@+id/precoProduto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="R$5,20"
-    android:textStyle="bold"
-    android:textSize="18sp"
-    android:textColor="@android:color/holo_green_dark"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    app:layout_constraintTop_toBottomOf="@id/descriçãoProduto"
-    app:layout_constraintStart_toEndOf="@id/fotoProduto"
+    <TextView
+        android:id="@+id/descriçãoProduto0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        android:text="Arroz Zilmar Parbolizado"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoProduto0"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto0" />
 
-    />
+    <TextView
+        android:id="@+id/precoProduto0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="R$5,20"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto0"
+        app:layout_constraintTop_toBottomOf="@id/descriçãoProduto0"
+
+        />
+
+    <ImageView
+        android:id="@+id/fotoProduto1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="160dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/item_arroz2"
+        app:layout_constraintStart_toStartOf="120dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeProduto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="10dp"
+        android:text="Arroz Peg Já"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriçãoProduto1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        android:text="Arroz Peg Já tipo 2"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoProduto1"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto1" />
+
+    <TextView
+        android:id="@+id/precoProduto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="R$4,80"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto1"
+        app:layout_constraintTop_toBottomOf="@id/descriçãoProduto1"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/fotoProduto2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="300dp"
+        android:src="@drawable/item_fejao1"
+        app:layout_constraintStart_toStartOf="120"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeProduto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="10dp"
+        android:text="Feijão Preto CGL"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriçãoProduto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        android:text="Feijão Preto CGL"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoProduto2"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto2" />
+
+    <TextView
+        android:id="@+id/precoProduto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="R$6,50"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto2"
+        app:layout_constraintTop_toBottomOf="@id/descriçãoProduto2"
+
+        />
+    <ImageView
+        android:id="@+id/fotoProduto3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="470dp"
+        android:src="@drawable/item_fejao2"
+        app:layout_constraintStart_toStartOf="120"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nomeProduto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="10dp"
+        android:text="Feijão Lider"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriçãoProduto3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="4"
+        android:text="Feijão lider carioquinha"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fotoProduto2"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto2" />
+
+    <TextView
+        android:id="@+id/precoProduto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="190dp"
+        android:text="R$8,79"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/fotoProduto2"
+        app:layout_constraintTop_toBottomOf="@id/descriçãoProduto2"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
